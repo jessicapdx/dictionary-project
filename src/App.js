@@ -1,9 +1,16 @@
+import logo from "./logo.png";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Dictionary App</h1>
+      <div className="App-header col">
+        <img
+          src={logo}
+          alt="Jessica Barrows, Frontend Developer"
+          className="App-logo"
+        />
+      </div>
     </div>
   );
 }
