@@ -2,6 +2,13 @@
     text-align: center;
 }
 
+.App-footer {
+    font-size: small;
+    margin-top: 250px;
+    padding: 15px;
+    vertical-align: bottom;
+}
+
 .App-header {
     align-items: center;
     justify-content: center;
