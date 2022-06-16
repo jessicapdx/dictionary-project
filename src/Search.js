@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
+import SearchResults from "./SearchResults";
 
 export default function Search() {
   let [query, setQuery] = useState(null);
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    let resp = response.data[0];
+    setResults(resp);
   }
 
   function search(event) {
@@ -38,6 +41,7 @@ export default function Search() {
           onChange={handleSearchQuery}
         />
       </form>
+      <SearchResults response={results} />
     </div>
   );
 }
