@@ -7,22 +7,22 @@ export default function SearchResults(props) {
     // words can have multiple meanings, hence meaning loop
     return (
       <div className="Results">
-        <h2 className="Results-word">{props.response.word}</h2>
-        <br />
-        {props.response.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <Phonetics response={phonetic} />
-            </div>
-          );
-        })}
-        <Phonetics phonetics={props.response.phonetics[0]} />
-        <br />
+        <section>
+          <h2 className="Results-word">{props.response.word}</h2>
+          {props.response.phonetics.map(function (phonetic, index) {
+            return (
+              <div key={index}>
+                <Phonetics response={phonetic} />
+              </div>
+            );
+          })}
+          <Phonetics phonetics={props.response.phonetics[0]} />
+        </section>
         {props.response.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <section key={index}>
               <Meaning meaning={meaning} />
-            </div>
+            </section>
           );
         })}
       </div>

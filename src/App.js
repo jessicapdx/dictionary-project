@@ -1,21 +1,21 @@
 import logo from "./logo.png";
-import Search from "./Search";
+import Dictionary from "./Dictionary";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
-      <div className="App-header row-12">
+      <div className="App-header">
         <img
           src={logo}
           alt="Jessica Barrows, Frontend Developer"
           className="App-logo"
         />
       </div>
-      <div className="Search-bar col">
-        <Search />
+      <div className="Search-bar">
+        <Dictionary />
       </div>
-      <div className="App-footer row-12">
+      <div className="App-footer">
         <a href="https://github.com/jessicapdx/dictionary-project">
           Open source code
         </a>{" "}
