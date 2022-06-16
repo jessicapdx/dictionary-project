@@ -15,7 +15,12 @@ export default function App() {
       <div className="Search-bar col">
         <Search />
       </div>
-      <div className="App-footer row-12">Coded by Jessica Barrows</div>
+      <div className="App-footer row-12">
+        <a href="https://github.com/jessicapdx/dictionary-project">
+          Open source code
+        </a>{" "}
+        by Jessica Barrows
+      </div>
     </div>
   );
 }
