@@ -6,7 +6,7 @@ export default function Search() {
   let [query, setQuery] = useState(null);
 
   function handleResponse(response) {
-    console.log(response);
+    console.log(response.data[0]);
   }
 
   function search(event) {
@@ -20,7 +20,6 @@ export default function Search() {
       .catch(function (error) {
         alert(`${error.response.data.message}`);
       });
-    alert(`Searching for ${query}`);
   }
 
   function handleSearchQuery(event) {
