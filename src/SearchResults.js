@@ -3,8 +3,6 @@ import Meaning from "./Meaning";
 
 export default function SearchResults(props) {
   if (props.response !== null) {
-    console.log(props);
-
     // words can have multiple meanings, hence meaning loop
     return (
       <div className="Results">
