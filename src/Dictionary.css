@@ -29,6 +29,10 @@ section {
     text-align: left;
 }
 
+.Meaning .example {
+    color: #7a7676;
+}
+
 .Phonetic .listen {
     background-color: #619661;
     border-radius: 50px;
