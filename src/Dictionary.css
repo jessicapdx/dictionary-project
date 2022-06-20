@@ -13,6 +13,10 @@ section {
     outline: none;
 }
 
+.Dictionary .form-group {
+    margin: 0 15px 0 5px;
+}
+
 .form-control:focus {
     border-color: #C0c7c1;
     -webkit-box-shadow: none;
@@ -43,8 +47,7 @@ section {
 }
 
 .search-bar {
-    margin: 1px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 .search-btn {
