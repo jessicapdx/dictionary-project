@@ -7,7 +7,7 @@ export default function SearchResults(props) {
     // words can have multiple meanings, hence meaning loop
     return (
       <div className="Results">
-        <section>
+        <section className="col-sm-center">
           <h2 className="Results-word">{props.response.word}</h2>
           {props.response.phonetics.map(function (phonetic, index) {
             return (
@@ -20,7 +20,7 @@ export default function SearchResults(props) {
         </section>
         {props.response.meanings.map(function (meaning, index) {
           return (
-            <section key={index}>
+            <section key={index} className="col-sm-center">
               <Meaning meaning={meaning} />
             </section>
           );

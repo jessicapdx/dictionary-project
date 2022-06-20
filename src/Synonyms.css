@@ -1,0 +1,14 @@
+.Synonyms {
+    margin: 30px;
+    padding: 0;
+}
+
+.Synonyms li {
+    display: inline-block;
+    margin: 5px;
+    padding-right: 15px;
+}
+
+.Synonyms .empty-synonym {
+    display: inline-block;
+}

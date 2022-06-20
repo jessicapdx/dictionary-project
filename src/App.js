@@ -13,7 +13,7 @@ export default function App() {
         />
       </div>
       <div className="Search-bar">
-        <Dictionary />
+        <Dictionary defaultKeyword="space" />
       </div>
       <div className="App-footer">
         <a href="https://github.com/jessicapdx/dictionary-project">
