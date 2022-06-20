@@ -51,3 +51,10 @@ section {
     color: #E6EDE6;
     margin: 1px;
 }
+
+.search-heading {
+    font-size: 22px;
+    margin-left: 10px;
+    padding: 5px;
+    text-align: left;
+}

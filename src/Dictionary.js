@@ -52,6 +52,7 @@ export default function Dictionary(props) {
               <input
                 autoFocus={true}
                 className="form-control search-bar"
+                defaultValue={props.defaultKeyword}
                 id="dictionarySearch"
                 onChange={handleSearchQuery}
                 placeholder="Enter an English word"
